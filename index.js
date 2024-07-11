@@ -128,7 +128,7 @@ app.use("/numbers/r" , (req , res)=>{
     return res.status(200).json({ "windowPrevState": preSet, "WindowCurrState": newState, "numbers": number, "avg": avg })
 })
 app.listen(PORT, () => {
-    console.log(SERVER RUNNING ON PORT ${PORT});
+    console.log(`SERVER RUNNING ON PORT ${PORT}`);
 });
 
 function generateFibonacci(n) {
